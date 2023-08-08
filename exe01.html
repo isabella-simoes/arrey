@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAYS</h1>
+    <h2> escreva nomes dentro do input</h2>
+    <input type="text" id="nomes">
+    <button onclick="nome()">Adicionar</button>
+    <div id="res">
+        Sua resposta aparecerá aqui
+    </div>
+
+    <script>
+        function nome(){
+
+        
+        var nomes = []
+        var nome = document.getElementById("nomes").value
+        var res = document.getElementById("res")
+
+        nomes.push(nome)
+        res.innerHTML = " "
+        // res.innerHTML = document.write(nomes)
+        for(i=0;i<nomes.length;i++){
+            res.innerHTML += nomes[i]+ "<br>"
+        }
+    
+
+
+        }
+
+
+
+    </script>
+</body>
+</html>
